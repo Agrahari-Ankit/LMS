@@ -17,15 +17,7 @@ use App\Http\Controllers\AdminController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/shop', function () {
-    return view('shop');
-});
-Route::get('/shop-details', function () {
-    return view('shop-details');
-});
-Route::get('/cart', function () {
-    return view('cart');
-});
+
 
 
 Route::get('admin-login',[AdminController::class, 'index']);
